@@ -59,7 +59,7 @@ SCENARIO("vector push", "[push]") {
 	REQUIRE(vector.capacity() == 3);
 	vector.push_back(4);
 	REQUIRE(vector.size() == 4);
-	REQUIRE(vector.capacity() == 4);
+	REQUIRE(vector.capacity() == 6);
 	REQUIRE(vector[0] == 0);
 	REQUIRE(vector[1] == 0);
 	REQUIRE(vector[2] == 0);
