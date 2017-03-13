@@ -26,8 +26,8 @@ SCENARIO("vector init object", "[init object]") {
 
 	vector_t a(b);
 
-	REQUIRE(vector.size() == 3);
-	REQUIRE(vector.capacity() == 4);
+	REQUIRE(a.size() == 3);
+	REQUIRE(a.capacity() == 4);
 	REQUIRE(a[0] == b[0]);
 	REQUIRE(a[1] == b[1]);
 	REQUIRE(a[2] == b[2]);
@@ -42,8 +42,8 @@ SCENARIO("vector op=", "[op=]") {
 
 	a = b;
 
-	REQUIRE(vector.size() == 3);
-	REQUIRE(vector.capacity() == 4);
+	REQUIRE(a.size() == 3);
+	REQUIRE(a.capacity() == 4);
 	REQUIRE(a[0] == b[0]);
 	REQUIRE(a[1] == b[1]);
 	REQUIRE(a[2] == b[2]);
