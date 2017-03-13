@@ -18,7 +18,6 @@ vector_t::vector_t(unsigned int size)
 
 vector_t::vector_t(const vector_t& other)
 {
-	delete[] ptr_;
 	size_ = other.size_;
 	capacity_ = other.capacity_;
 	ptr_ = new int[capacity_];
